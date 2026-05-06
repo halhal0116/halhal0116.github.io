@@ -41,10 +41,10 @@
         }
 
         .categories {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 320px);
             justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            gap: 40px 30px;
             margin-top: 30px;
         }
 
@@ -77,6 +77,17 @@
 
         .category-box a:hover {
             background: rgba(106, 17, 203, 0.9);
+        }
+
+        @media (max-width: 700px) {
+            .categories {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-image img {
+                width: 90%;
+                max-width: 320px;
+            }
         }
     </style>
 </head>
@@ -115,6 +126,30 @@
 
             <div class="category-box">
                 <a href="chinese.html">Chinese Blog</a>
+            </div>
+        </div>
+
+        <div class="category-item">
+            <div class="blog-image">
+                <a href="korean.html">
+                    <img src="photo004.png" alt="Korean Book">
+                </a>
+            </div>
+
+            <div class="category-box">
+                <a href="korean.html">Korean Blog</a>
+            </div>
+        </div>
+
+        <div class="category-item">
+            <div class="blog-image">
+                <a href="it.html">
+                    <img src="photo005.png" alt="IT Blog">
+                </a>
+            </div>
+
+            <div class="category-box">
+                <a href="it.html">IT Blog</a>
             </div>
         </div>
 
