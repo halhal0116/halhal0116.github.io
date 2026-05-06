@@ -40,8 +40,29 @@
             line-height: 1.8;
         }
 
-        .category-box {
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
             margin-top: 30px;
+        }
+
+        .category-item {
+            text-align: center;
+        }
+
+        .blog-image img {
+            width: 320px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            opacity: 0.95;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .category-box {
+            margin-top: 15px;
         }
 
         .category-box a {
@@ -57,16 +78,6 @@
         .category-box a:hover {
             background: rgba(106, 17, 203, 0.9);
         }
-        .blog-image {
-            margin-top: 30px;
-        }
-
-        .blog-image img {
-            width: 320px;
-            border-radius: 12px;
-            opacity: 0.95;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-        }
     </style>
 </head>
 <body>
@@ -81,14 +92,32 @@
 
     <h2>Blog Categories</h2>
 
-    <div class="blog-image">
-        <a href="english.html">
-            <img src="photo002.png" alt="English Book">
-        </a>
-    </div>
+    <div class="categories">
 
-    <div class="category-box">
-        <a href="english.html">English Blog</a>
+        <div class="category-item">
+            <div class="blog-image">
+                <a href="english.html">
+                    <img src="photo002.png" alt="English Book">
+                </a>
+            </div>
+
+            <div class="category-box">
+                <a href="english.html">English Blog</a>
+            </div>
+        </div>
+
+        <div class="category-item">
+            <div class="blog-image">
+                <a href="chinese.html">
+                    <img src="photo003.png" alt="Chinese Book">
+                </a>
+            </div>
+
+            <div class="category-box">
+                <a href="chinese.html">Chinese Blog</a>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
